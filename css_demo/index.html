@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan V | CSS Demo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+        #orange-text{
+            color:orange;
+        }
+        .multi-line {
+            color:rgb(255, 0, 0);
+            text-align: right;
+            font-size: 30px;
+        }
+        body{
+            background-color:rgb(255, 127, 225);
+        }
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #small-text {
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href=about.html>About</a></li>
+                <li><a href=contact.html>Contact</a></li>
+        </ul>
+    </div>
+    <h1>Today we will learn about adding style to our page</h1>
+    <h2>This is how we add style with INLINE CSS</h2>
+    <p style="color:rgb(0, 0, 255);">I want this text to be blue.</p>
+    <p style="font-size: 45px;">I want this text to be really BIG</p>
+    <p style="font-size: 10px;">But I want this text to be really small</p>
+    <p style="text-align: center;">I want this text to be centered</p>
+    <p style="font-family: 'Calibri, 'Trebuchet MS', sans-serif;">I want this text to be in Calibri</p>
+    <p style="font-family:Arial, Helvetica, sans-serif; font-size:40px; text-align: center; color: rgb(0,255,242)"> I want this text to be large, centered, aqua, and in Arial font</p>
+    <h2>This is how we do internal CSS</h2>
+    <p id="orange-text">I want this text to be orange.</p>
+    <p class="multi-line">This line will be styled the same as the next one</p>
+    <p class="multi-line">...and the on ebelow this one...</p>
+    <p class="multi-line">We all look the same!</p>
+    <h2>This is how we use external CSS</h2>
+    <p>First, create your external style.css file.</p>
+    <p id="multi-text">Give this line a selector and add the style details to style.css</p>
+    <h2>Can we use inline, internal, and external together? </h2>
+    <p>Sure can!</p>
+    <p style="color:green;" id="small-text" class="center-text">I want this text to be green, small, and centered.</p>
+    <h2>This is how we use divs and spans.</h2>
+    <div class="my-first-div">
+        <p>This paragraph is part of a div</p>
+        <p>So is this one</p>
+        <img src="images/mj_wallpaper.jpg" width="400">
+        <p>That image is too!</p>
+        <p>This <span id="span-1">word</span> and this <span id="span-2"> group of words</span> <span>will look different</span></p>
+    </div>
+</body>
+</html>

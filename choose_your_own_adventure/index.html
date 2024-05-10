@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan V | Choose Your Own Adventure Game</title>
+</head>
+<body>
+    <script>
+        function playGame() {
+        var ignoreBerries = confirm("You are starving alone in the woods. You see some berries. Do you ignore them because they might be poisonous?");
+        alert(ignoreBerries);
+        if (ignoreBerries == true) {
+            //we enter
+            alert("You decide to not eat the berries for now. You are still hungry but you're alive. You can use the berries as bait to catch an animal.")
+            var baitBerries = prompt("Do you ignore the berries again, use them as bait, or eat them? Please type 1, 2, or 3.");
+            if(baitBerries==1){
+                alert("You ignore the berries again. You are extremely hungry now but at least you are still alive. You move on to find something else to eat.");
+                var riverChoice = prompt("You come across a river. You can choose to, return to the forest, try to make a spear to catch a fish, or follow the river downstream. Please type forest, fish, or follow.");
+                if (riverChoice == "forest") {
+                    alert("You decide to return to the forest. As you re-enter the woods a bear spots you and attacks you. You are brutally torn apart by the fierce bear.");
+                } else if (riverChoice == "fish") {
+                    alert("You decide to try and make a spear to catch some fish. As you are making the spear you slip and fall, impaling yourself on your own spear. You are dead in 10 minutes.");
+                } else{
+                    alert("You decide to follow the river downstream. You come across a civilization with food, shelter and people who are excited to see you. You have won the game. Good job.");
+                }
+            }else if (baitBerries==2) {
+                alert("You set up a trap to catch food with the berries. You wait and wait but nothing happens. You are now starving to death you are dead in an hour.");
+            } else if (baitBerries==3){
+                alert("You decide to eat the berries this time. They initially taste like any other berry but suddenly, your stomach starts to grow until it explodes and you die..")
+            }
+        } else {
+            //we do not enter
+            alert("You have decided to just kill yourself instead of attempting to survive in the woods. You are a soft, weak, lame human being who doesn't deserve to live anyways. Good decision on killing yourself. Nobody wants you to exist anyways. Your game is over and so is your life. Goodbye and good riddance.")
+         }
+         var playAgain=confirm("Do you want to play again?")
+         if (playAgain==true){
+            playGame();
+         }else{
+            alert("Thanks for playing. ggs");
+         }
+        }
+        playGame();
+        
+    </script>
+</body>
+</html>
